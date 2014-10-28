@@ -28,7 +28,7 @@ fi
 fbsetbg -f /usr/share/backgrounds/warty-final-ubuntu.png
 
 # Change keyboard layout to US English
-xkbsetmap us
+setxkbmap -layout 'us,ru,no' -option 'grp:alt_shift_toggle'
 
 # And last but not least we start fluxbox.
 # Because it is the last app you have to run it with ''exec'' before it.
