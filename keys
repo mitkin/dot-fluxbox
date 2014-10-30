@@ -1,3 +1,11 @@
+# manual tiling with key chains - useing chains to avoid clash with keybindings #
+
+Ctrl Mod1 h :ArrangeWindowsHorizontal
+Ctrl Mod1 v :ArrangeWindowsVertical
+
+Ctrl Mod1 Left :MacroCmd {ResizeTo 50% 50%} {MoveTo 0 0 UpperLeft} {MaximizeVertical}
+Ctrl Mod1 Right :MacroCmd {ResizeTo 50% 50%} {MoveTo 0 0 UpperRight} {MaximizeVertical}
+
 Mod1 Shift F12 :Exec setxkbmap us
 Mod1 Shift F11 :Exec setxkbmap ru
 Mod1 Shift F10 :Exec setxkbmap no
@@ -89,12 +97,9 @@ Mod1 space :WindowMenu
 Control Mod1 Delete :Exit
 
 # change to previous/next workspace
-Control Mod1 Left :PrevWorkspace
-Control Mod1 Right :NextWorkspace
+Mod4 Left :PrevWorkspace
+Mod4 Right :NextWorkspace
 
-# send the current window to previous/next workspace
-Mod4 Left :SendToPrevWorkspace
-Mod4 Right :SendToNextWorkspace
 
 # send the current window and follow it to previous/next workspace
 Control Mod4 Left :TakeToPrevWorkspace
