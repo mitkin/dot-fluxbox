@@ -33,6 +33,9 @@ setxkbmap -layout 'us,ru,no' -option 'grp:alt_shift_toggle'
 # Apply Xdefaults setings
 xrdb -merge ~/.Xdefaults
 
+# Set up compositing
+compton -c -r10 -F -f -D5 -C -o0.8 -i0.9 &
+
 # And last but not least we start fluxbox.
 # Because it is the last app you have to run it with ''exec'' before it.
 
